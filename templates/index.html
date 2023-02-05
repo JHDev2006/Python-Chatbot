@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Vitality</title>  
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  </head>
+  
+  <body>
+    
+    <div class="vds-primary-nav__inner snipcss-Pne3C">
+  <div class="vds-primary-nav__link-container">
+    <ul class="vds-primary-nav__link-list">
+      <li class="vds-primary-nav__link-item">
+        <a href="https://www.vitality.co.uk/" class="vds-primary-nav__link vds-primary-nav__link--active">
+          Personal
+        </a>
+      </li>
+      <li class="vds-primary-nav__link-item">
+        <a href="https://www.vitality.co.uk/business/" class="vds-primary-nav__link">
+          Business
+        </a>
+      </li>
+      <li class="vds-primary-nav__link-item">
+        <a href="https://www.vitality.co.uk/advisers/" class="vds-primary-nav__link">
+          Advisers
+        </a>
+      </li>
+      <li class="vds-primary-nav__link-item">
+        <a href="https://www.vitality.co.uk/healthcare-providers/" class="vds-primary-nav__link">
+          Providers
+        </a>
+      </li>
+      <li class="vds-primary-nav__link-item">
+        <a href="https://www.vitality.co.uk/careers/" class="vds-primary-nav__link">
+          Careers
+        </a>
+      </li>
+      <li class="vds-primary-nav__link-item">
+        <a href="https://www.vitality.co.uk/community/" class="vds-primary-nav__link">
+          Community
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="vds-primary-nav__widget-container">
+    <ul class="vds-primary-nav__link-list">
+      <li class="vds-primary-nav__link-item">
+        <a href="https://www.vitality.co.uk/search/" class="vds-primary-nav__link vds-primary-nav__link--search">
+          Search Vitality
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="vds-secondary-nav__inner snipcss-OThHW">
+  <div class="vds-secondary-nav__toggle-container">
+    <button type="button" class="vds-secondary-nav__toggle" onclick="secondaryMobileToggle()">
+      <span>
+      </span>
+      <span>
+      </span>
+      <span>
+      </span>
+      <span>
+      </span>
+    </button>
+  </div>
+  <div class="vds-secondary-nav__branding-container">
+    <a href="https://www.vitality.co.uk/" class="vds-secondary-nav__branding-link" title="Home" aria-label="Home">
+      <img src="https://www.vitality.co.uk/media-online/presales/system/vitality-logo.svg?h=55&amp;w=100&amp;la=en&amp;hash=7B1DB559D662BD3994C53F8649118AA4" height="55" width="100" alt="Vitality">
+    </a>
+  </div>
+  <div class="vds-secondary-nav__link-container">
+    <ul class="vds-secondary-nav__link-list">
+      <li class="vds-secondary-nav__link-item" aria-expanded="false">
+        <div class="vds-secondary-nav__dropdown" aria-hidden="true">
+          <div class="vds-secondary-nav__dropdown-inner">
+            <div class="vds-grid">
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-primary">
+                  Get a health quote in minutes
+                </span>
+                <p>
+                  5 Star Defaqto rated health insurance, with rewards for healthy living. From £1.25 a day.
+                </p>
+                <p>
+                </p>
+                <p>
+                  <img src="https://www.vitality.co.uk/media-online/presales/pst-refresh/awards-logos/defaqto-ratings-2022/health-year-5-rgb--defaqto.svg?h=64&amp;w=101&amp;la=en&amp;hash=9FCE14615ED8198830AA8C6E63D2FDEF" height="64" width="101" alt="Health-Year-5-RGB -DEFAQTO">
+                </p>
+                <a href="https://www.vitality.co.uk/health-insurance/online-quote/your-name/" class="vds-button">
+                  Get a health quote
+                </a>
+                <a href="https://www.vitality.co.uk/support/health/how-to-make-a-claim/" class="vds-button vds-button--line vds-secondary-nav__cta">
+                  How to make a claim
+                </a>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Health insurance cover
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/" class="vds-secondary-nav__sub-link">
+                      Health insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/core-cover/" class="vds-secondary-nav__sub-link">
+                      Our core health cover
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/vitality-gp/" class="vds-secondary-nav__sub-link">
+                      Vitality GP
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/core-cover/mental-health-consultant-panel/" class="vds-secondary-nav__sub-link">
+                      CBT and counselling
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/core-cover/in-patient/" class="vds-secondary-nav__sub-link">
+                      In-patient treatment
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/core-cover/cancer/" class="vds-secondary-nav__sub-link">
+                      Cancer cover
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/menopause-support/" class="vds-secondary-nav__sub-link">
+                      Menopause support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Cover options and offers
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/cover-options/" class="vds-secondary-nav__sub-link">
+                      Health insurance cover options
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/cover-options/travel/" class="vds-secondary-nav__sub-link">
+                      Worldwide travel insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/cover-options/optical-dental-hearing/" class="vds-secondary-nav__sub-link">
+                      Optical, dental and hearing insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/control-costs/" class="vds-secondary-nav__sub-link">
+                      Control your Vitality costs
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/business/health-insurance/" class="vds-secondary-nav__sub-link">
+                      Business health insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/health-insurance/offers/" class="vds-secondary-nav__sub-link">
+                      Health Insurance offers
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/active-rewards/apple-watch/" class="vds-secondary-nav__sub-link">
+                      Apple Watch offer
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.vitality.co.uk/health-insurance/" class="vds-secondary-nav__link">
+          Health insurance
+        </a>
+      </li>
+      <li class="vds-secondary-nav__link-item" aria-expanded="false">
+        <div class="vds-secondary-nav__dropdown" aria-hidden="true">
+          <div class="vds-secondary-nav__dropdown-inner">
+            <div class="vds-grid">
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-primary">
+                  Get a life quote in minutes
+                </span>
+                <p>
+                  5 Star Defaqto rated life insurance, with rewards for healthy living. From £8 a month.
+                </p>
+                <p>
+                </p>
+                <p>
+                  <img src="https://www.vitality.co.uk/media-online/presales/pst-refresh/awards-logos/defaqto-ratings-2022/life-year-5-rgb-defaqto.svg?h=64&amp;w=101&amp;la=en&amp;hash=48DB7A06F795E61354A6BF80C71D1133" height="64" width="101" alt="Life-Year-5-RGB-DEFAQTO">
+                </p>
+                <a href="https://www.vitality.co.uk/life-insurance/quote" class="vds-button">
+                  Get a life quote
+                </a>
+                <a href="https://www.vitality.co.uk/support/life/how-to-make-a-claim/" class="vds-button vds-button--line vds-secondary-nav__cta">
+                  How to make a claim
+                </a>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Life insurance cover
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/" class="vds-secondary-nav__sub-link">
+                      Life insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/activelife-insurance/" class="vds-secondary-nav__sub-link">
+                      ActiveLife insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/life-cover/whole-life/" class="vds-secondary-nav__sub-link">
+                      Whole of life insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/life-cover/term-life/" class="vds-secondary-nav__sub-link">
+                      Term life insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/joint/" class="vds-secondary-nav__sub-link">
+                      Joint life insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/over-50s/" class="vds-secondary-nav__sub-link">
+                      Over 50s life insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/family/" class="vds-secondary-nav__sub-link">
+                      Family life insurance
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Cover options and offers
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/serious-illness-cover/" class="vds-secondary-nav__sub-link">
+                      Critical illness cover
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/income-protection-cover/" class="vds-secondary-nav__sub-link">
+                      Income protection insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/mortgage-protection-plan/" class="vds-secondary-nav__sub-link">
+                      Mortgage protection insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/campaigns/get-rewarded/" class="vds-secondary-nav__sub-link">
+                      Life insurance rewards
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/active-rewards/apple-watch/" class="vds-secondary-nav__sub-link">
+                      Apple Watch offer
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/life-insurance/guides/" class="vds-secondary-nav__sub-link" title="Life insurance guides">
+                      Life insurance guides
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.vitality.co.uk/life-insurance/" class="vds-secondary-nav__link">
+          Life insurance
+        </a>
+      </li>
+      <li class="vds-secondary-nav__link-item" aria-expanded="false">
+        <div class="vds-secondary-nav__dropdown" aria-hidden="true">
+          <div class="vds-secondary-nav__dropdown-inner">
+            <div class="vds-grid">
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-primary">
+                  Get a car quote in minutes
+                </span>
+                <p>
+                  5 Star Defaqto rated car insurance, with up to 25% cashback every month. Get rewarded by driving well or having a car-free day. Terms apply.
+                </p>
+                <p>
+                </p>
+                <p>
+                  <img src="https://www.vitality.co.uk/media-online/presales/pst-refresh/awards-logos/defaqto-ratings-2022/car-insurance-5-year-rgb-defaqto.svg?h=64&amp;w=101&amp;la=en&amp;hash=3CE328E09B51D5567AEDCD7EE08F1EC1" height="64" width="101" alt="Car-insurance-5-year-rgb-DEFAQTO">
+                </p>
+                <a href="https://members.vitality.co.uk/car-insurance/online-quote/car-registration?_its=JTdCJTIydmlkJTIyJTNBJTIyMmIzMTU5ODMtYzQ1MS00ZTUyLWFhNGQtNmYyYmM0MDBhZTU5JTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTY3NTMzMDQzMH5sYW5kfjJfOTkzNTZfZGlyZWN0X2UzMTM4OGE0NDI3NzExOTVlOTU5OTBlNDFkYzczNmU5JTIyJTJDJTIyc2l0ZUlkJTIyJTNBMTcwMjElN0Q%3D" class="vds-button">
+                  Get a car quote
+                </a>
+                <a href="https://www.vitality.co.uk/support/car/how-to-make-a-claim/" class="vds-button vds-button--line vds-secondary-nav__cta">
+                  How to make a claim
+                </a>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Car insurance cover
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/car-insurance/" class="vds-secondary-nav__sub-link">
+                      Car insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/car-insurance/electric-car-insurance/" class="vds-secondary-nav__sub-link">
+                      Electric car insurance
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/car-insurance/cover-options/" class="vds-secondary-nav__sub-link">
+                      Car insurance cover options
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/car-insurance/car-guides/" class="vds-secondary-nav__sub-link">
+                      Car guides
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Rewards and benefits
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/good-driving/" class="vds-secondary-nav__sub-link">
+                      Good Driving rewards
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/good-driving/cashback/" class="vds-secondary-nav__sub-link">
+                      Cashback
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/active-rewards/caffe-nero/" class="vds-secondary-nav__sub-link">
+                      Caffè Nero
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/car-insurance/greener-future/" class="vds-secondary-nav__sub-link">
+                      Greener future
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.vitality.co.uk/car-insurance/" class="vds-secondary-nav__link">
+          Car insurance
+        </a>
+      </li>
+      <li class="vds-secondary-nav__link-item" aria-expanded="false">
+        <a href="https://www.vitality.co.uk/investments/" class="vds-secondary-nav__link">
+          Investments
+        </a>
+      </li>
+      <li class="vds-secondary-nav__link-item" aria-expanded="false">
+        <div class="vds-secondary-nav__dropdown" aria-hidden="true">
+          <div class="vds-secondary-nav__dropdown-inner">
+            <div class="vds-grid">
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-primary">
+                  How the Vitality Programme works
+                </span>
+                <p>
+                  Looking to get healthier, feel less stressed or even improve your driving? Whatever your reason for making a change, we’ve got the benefits and rewards to help you on your way.
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <a href="https://www.vitality.co.uk/rewards/" class="vds-button">
+                  Explore Vitality rewards
+                </a>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Partners by category
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/activity-tracking/" class="vds-secondary-nav__sub-link">
+                      Activity tracking
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/active-rewards/cinema/" class="vds-secondary-nav__sub-link">
+                      Cinema
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/health-checks/" class="vds-secondary-nav__sub-link">
+                      Health checks
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/healthy-eating/" class="vds-secondary-nav__sub-link">
+                      Healthy eating
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/fitness/" class="vds-secondary-nav__sub-link">
+                      Gym and fitness
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/healthy-mind/" class="vds-secondary-nav__sub-link">
+                      Mindfulness
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/travel/" class="vds-secondary-nav__sub-link">
+                      Travel
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Popular rewards
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/" class="vds-secondary-nav__sub-link">
+                      Vitality rewards
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/active-rewards/apple-watch/" class="vds-secondary-nav__sub-link">
+                      Apple Watch
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/activity-tracking/garmin/" class="vds-secondary-nav__sub-link">
+                      Garmin
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/fitness/nuffield-health/" class="vds-secondary-nav__sub-link">
+                      Nuffield Health Gyms
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/fitness/puregym/" class="vds-secondary-nav__sub-link">
+                      PureGym
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/partners/fitness/virgin-active/" class="vds-secondary-nav__sub-link">
+                      Virgin Active
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/rewards/" class="vds-secondary-nav__sub-link">
+                      All partners
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.vitality.co.uk/rewards/" class="vds-secondary-nav__link">
+          Rewards
+        </a>
+      </li>
+      <li class="vds-secondary-nav__link-item" aria-expanded="false">
+        <div class="vds-secondary-nav__dropdown" aria-hidden="true">
+          <div class="vds-secondary-nav__dropdown-inner">
+            <div class="vds-grid">
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-primary">
+                  Missing Vitality points?
+                </span>
+                <p>
+                  Find out how to recover any Vitality points that are missing from your status.
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <a href="https://www.vitality.co.uk/support/vitality-programme/missing-vitality-points/" class="vds-button">
+                  Go to missing points guide
+                </a>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Product support
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/claiming/" class="vds-secondary-nav__sub-link">
+                      Make a claim
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/health/" class="vds-secondary-nav__sub-link">
+                      Health insurance support
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/life/" class="vds-secondary-nav__sub-link">
+                      Life insurance support
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/car/" class="vds-secondary-nav__sub-link">
+                      Car insurance support
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/invest/" class="vds-secondary-nav__sub-link">
+                      Investments support
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/vitality-programme/" class="vds-secondary-nav__sub-link">
+                      Vitality Programme support
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/" class="vds-secondary-nav__sub-link">
+                      All Vitality support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="vds-grid__column vds-grid__column--xs-4">
+                <span class="vds-secondary-nav__heading-secondary">
+                  Useful support links
+                </span>
+                <ul class="vds-secondary-nav__sub-list">
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/vitality-programme/member-zone-and-app-guide/" class="vds-secondary-nav__sub-link">
+                      Member Zone and app guide
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://members.vitality.co.uk/service-update?_its=JTdCJTIydmlkJTIyJTNBJTIyMmIzMTU5ODMtYzQ1MS00ZTUyLWFhNGQtNmYyYmM0MDBhZTU5JTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTY3NTMzMDQzMH5sYW5kfjJfOTkzNTZfZGlyZWN0X2UzMTM4OGE0NDI3NzExOTVlOTU5OTBlNDFkYzczNmU5JTIyJTJDJTIyc2l0ZUlkJTIyJTNBMTcwMjElN0Q%3D" class="vds-secondary-nav__sub-link">
+                      Member service update
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/vitality-programme/missing-vitality-points/" class="vds-secondary-nav__sub-link">
+                      Missing Vitality points
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/activity-trackers/apple-watch/" class="vds-secondary-nav__sub-link">
+                      Apple Watch support
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/activity-trackers/" class="vds-secondary-nav__sub-link">
+                      Activity tracker support
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/support/health/health-conditions/" class="vds-secondary-nav__sub-link">
+                      Health conditions
+                    </a>
+                  </li>
+                  <li class="vds-secondary-nav__sub-item">
+                    <a href="https://www.vitality.co.uk/contact/" class="vds-secondary-nav__sub-link">
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.vitality.co.uk/support/" class="vds-secondary-nav__link">
+          Support
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="vds-secondary-nav__widget-container">
+    <a href="https://www.vitality.co.uk/search/" class="vds-secondary-nav__icon-cta" title="Search">
+      <svg class="svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+        <path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;">
+        </path>
+      </svg>
+      <span class="vds-visually-hidden">
+        Search Vitality
+      </span>
+    </a>
+    <a href="#" class="vds-secondary-nav__icon-cta" title="Log in" onclick="openOverlay('LoginLinks', event)" data-overlay-trigger="LoginLinks">
+      <svg class="svg-inline--fa fa-circle-user" aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+        <path fill="currentColor" d="M256 112c-48.6 0-88 39.4-88 88C168 248.6 207.4 288 256 288s88-39.4 88-88C344 151.4 304.6 112 256 112zM256 240c-22.06 0-40-17.95-40-40C216 177.9 233.9 160 256 160s40 17.94 40 40C296 222.1 278.1 240 256 240zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-46.73 0-89.76-15.68-124.5-41.79C148.8 389 182.4 368 220.2 368h71.69c37.75 0 71.31 21.01 88.68 54.21C345.8 448.3 302.7 464 256 464zM416.2 388.5C389.2 346.3 343.2 320 291.8 320H220.2c-51.36 0-97.35 26.25-124.4 68.48C65.96 352.5 48 306.3 48 256c0-114.7 93.31-208 208-208s208 93.31 208 208C464 306.3 446 352.5 416.2 388.5z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:currentColor;">
+        </path>
+      </svg>
+      <span class="vds-visually-hidden">
+        Log in
+      </span>
+    </a>
+    <a href="#" class="vds-button vds-button--line vds-secondary-nav__cta" onclick="openOverlay('LoginLinks', event)" data-overlay-trigger="LoginLinks">
+      Log in
+    </a>
+    <a href="#" class="vds-button vds-secondary-nav__cta vds-secondary-nav__cta--primary" onclick="openOverlay('QuoteLinks', event)" data-overlay-trigger="QuoteLinks">
+      Get a quote
+    </a>
+  </div>
+</div>
+
+
+    
+<div class="chatbot" style="margin: auto" >
+<form id="chat-form" method="post" class="input-field">
+                <textarea id="input-text" name="input_text"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+</div>
+
+  </body>
+
+</html>
